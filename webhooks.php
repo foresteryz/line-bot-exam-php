@@ -54,5 +54,4 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-echo "1 :".$event['message']. "\r\n";
-echo "2 :".$event['message']['text']. "\r\n";
+echo "1 :". $event['events'][0]['message']['text'] . "\r\n";
