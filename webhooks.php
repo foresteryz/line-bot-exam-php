@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 		{
 			$ms = $events['events'][0]['message']['text'];
 			
-			if($ms == "สวัสดี" )
+			if(strstr($ms, 'สวัสดี'))
 			{
 				// Get text sent
 				$text = $event['source']['userId'];
