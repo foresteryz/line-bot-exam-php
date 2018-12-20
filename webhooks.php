@@ -54,4 +54,4 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-echo $event['message'];
+echo $event['message']['text'];
