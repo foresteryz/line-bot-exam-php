@@ -17,7 +17,9 @@ if (!is_null($events['events'])) {
 		
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text')
 		{
-			if(strstr($event['message'], 'สวัสดี'))
+			$ms = $events['events'][0]['message']['text'];
+			
+			if($ms == "สวัสดี" )
 			{
 				// Get text sent
 				$text = $event['source']['userId'];
